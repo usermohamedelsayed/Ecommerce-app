@@ -1,0 +1,12 @@
+export { default as Header } from "./header/Header";
+export { default as Footer } from "./footer/Footer";
+export { default as NavShop } from "./navShop/NavShop";
+export { default as CardLighter } from "./cards/cardLighter/CardLighter";
+export { default as CardBold } from "./cards/cardBold/CardBold";
+export { default as CardBolder } from "./cards/cardBolder/CardBolder";
+export { default as CardBlog } from "./cards/cardBlog/CardBlog";
+export { default as SwiperCarousl } from "./swiperCarousl/SwiperCarousl";
+export { default as SwiperGrid } from "./swiperGrid/SwiperGrid";
+export { default as PathPage } from "./pathPage/PathPage";
+export { default as AsideOurStore } from "./asideOurStore/AsideOurStore";
+export { default as ArticleOurStore } from "./articleOurStore/ArticleOurStore";

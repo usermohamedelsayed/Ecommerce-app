@@ -1,0 +1,140 @@
+.CompareProducts {
+    overflow: hidden;
+    background-color: var(--bg-sub-primary);
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+
+        .ProductCompare {
+            width: 100%;
+            perspective: 1000px;
+            background-color: var(--bg-primary);
+            overflow: hidden;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+
+            &:hover .iconsSetting {
+                top: 0;
+            }
+
+            .iconsSetting {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                gap: 5px;
+                transition: .3s ease;
+                top: -50%;
+
+                i {
+                    width: calc(100% / 4);
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--bg-primary);
+                    border-radius: 3px;
+                    cursor: pointer;
+                    position: relative;
+
+                    a {
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover {
+                        background-color: var(--cr-primary);
+                        color: #fff;
+
+                        &:last-child {
+                            background-color: red;
+                        }
+                    }
+                }
+            }
+
+            .detalis {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .imgs {
+                width: 100%;
+                height: 170px;
+                padding: 0;
+                position: relative;
+                margin-bottom: 10px;
+                transform-style: preserve-3d;
+                transition: .3s ease;
+
+                img {
+                    border-radius: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    user-select: none;
+                }
+
+                .back {
+                    transform: rotateY(180deg);
+                }
+
+                &.flip {
+                    transform: rotateY(180deg);
+                }
+            }
+
+            .title {
+                font-weight: 600;
+                font-size: 16px;
+                color: var(--cr-text);
+            }
+
+            .desc {
+                margin-top: -10px;
+                font-size: 12px;
+                flex: 1;
+            }
+
+            p {
+                font-size: 14px;
+                color: var(--cr-text-muted);
+                line-height: 1.5;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span:nth-child(1) {
+                    font-weight: 600;
+                    color: var(--cr-text);
+                }
+            }
+        }
+    }
+
+    .Player {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        * {
+            width: 100%;
+        }
+    }
+}

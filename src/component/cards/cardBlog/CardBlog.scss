@@ -1,0 +1,59 @@
+.CardBlog {
+    padding: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .3s ease;
+
+    &:hover {
+        transform: translateY(-15px);
+
+        img {
+            scale: 1.1;
+        }
+    }
+
+    img {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        max-height: 200px;
+        border-radius: 4px 4px 0 0;
+        height: 100%;
+        object-fit: cover;
+        margin-top: -10px;
+        transition: .3s ease;
+    }
+
+    .details {
+        margin-top: 20px;
+
+        .desc,
+        small {
+            display: block;
+            font-size: 11px;
+            line-height: 1.6;
+            color: var(--cr-text-muted);
+            text-transform: uppercase;
+        }
+
+        .desc {
+            text-transform: lowercase;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 2px 0 5px;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 0;
+        overflow: hidden;
+
+        a {
+            display: block;
+            padding: 10px;
+        }
+    }
+}

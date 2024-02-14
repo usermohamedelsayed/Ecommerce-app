@@ -1,0 +1,11 @@
+export { default as Home } from "./home/Home";
+export { default as OurStore } from "./ourStore/OurStore";
+export { default as Blogs } from "./blogs/Blogs";
+export { default as SingleBlog } from "./singleBlog/SinglBlog";
+export { default as SingleProduct } from "./singleProduct/SingleProduct";
+export { default as Contact } from "./contact/Contact";
+export { default as Cart } from "./cart/Cart";
+export { default as Favourite } from "./favourite/Favourite";
+export { default as CompareProducts } from "./CompareProducts/CompareProducts";
+export { default as Account } from "./account/Account";
+export { default as SearchPage } from "./searchPage/SearchPage";

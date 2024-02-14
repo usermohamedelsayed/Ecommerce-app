@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b37a8838.css",
+    "main.js": "/static/js/main.024697e1.js",
+    "static/media/Mohamed_Elsayed.jpg": "/static/media/Mohamed_Elsayed.a9af27f613c6295b5a4b.jpg",
+    "static/media/no_product_found.jpg": "/static/media/no_product_found.7480c7fbca0adaa14d1b.jpg",
+    "static/media/404.png": "/static/media/404.6bf243d973ca94189cd0.png",
+    "static/media/catbanner-01.jpg": "/static/media/catbanner-01.e4ca3797700ec9ea33e5.jpg",
+    "static/media/imgProduct23.jpg": "/static/media/imgProduct23.4a572a2cbe4e802b546f.jpg",
+    "static/media/imgProduct21.jpg": "/static/media/imgProduct21.01a5416221bf2559a442.jpg",
+    "static/media/imgProduct22.jpg": "/static/media/imgProduct22.fd21bd40531e95e996ea.jpg",
+    "static/media/catbanner-02.jpg": "/static/media/catbanner-02.b4bf0385edec7fcff5be.jpg",
+    "static/media/imgBlog03.jpg": "/static/media/imgBlog03.ba155d989afb69b6f6b8.jpg",
+    "static/media/brand-05.png": "/static/media/brand-05.4afee9ac86db47b1ef8b.png",
+    "static/media/imgBlog04.jpg": "/static/media/imgBlog04.83d4bb3a58840c07af9e.jpg",
+    "static/media/imgBlog06.jpg": "/static/media/imgBlog06.fd13f33b156b0961a2fb.jpg",
+    "static/media/imgBlog07.jpg": "/static/media/imgBlog07.0e7cab40e39ac4bcbe1d.jpg",
+    "static/media/brand-06.png": "/static/media/brand-06.5c17939c95c64746cc7c.png",
+    "static/media/catbanner-04.jpg": "/static/media/catbanner-04.9f4b05649fcab3108e07.jpg",
+    "static/media/brand-07.png": "/static/media/brand-07.3c1bbdb480d5d6e8d815.png",
+    "static/media/catbanner-06.jpg": "/static/media/catbanner-06.0f874d6509da88fbc26b.jpg",
+    "index.html": "/index.html",
+    "main.b37a8838.css.map": "/static/css/main.b37a8838.css.map",
+    "main.024697e1.js.map": "/static/js/main.024697e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b37a8838.css",
+    "static/js/main.024697e1.js"
+  ]
+}

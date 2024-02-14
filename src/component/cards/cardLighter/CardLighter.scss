@@ -1,0 +1,109 @@
+.CardLighter {
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+
+    &:hover .options {
+        right: 20px;
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+        top: 20px;
+        right: -100%;
+        transition: .3s ease;
+
+        .option {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-sub-primary);
+            height: 30px;
+            width: 30px;
+            padding-top: 3px;
+            border-radius: 2px;
+            border: 1px solid var(--cr-border);
+            cursor: pointer;
+            user-select: none;
+            transition: .2s;
+
+            &:hover {
+                background-color: var(--cr-primary);
+                color: #fff !important;
+                border: none;
+            }
+        }
+
+    }
+
+    .filling {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        flex: 1;
+        perspective: 600px;
+
+        .images {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: .5s ease;
+            width: 100%;
+            height: 190px;
+
+            .back,
+            .front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .back {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .details {
+            .title {
+                font-weight: 700;
+                font-size: 13px;
+                max-width: 200px;
+            }
+
+            .stars {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                i {
+                    color: orange;
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+
+            .price {
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+}
