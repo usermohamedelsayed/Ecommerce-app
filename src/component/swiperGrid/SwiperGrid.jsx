@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Grid, Navigation } from 'swiper/modules'
 import { FaChevronLeft } from 'react-icons/fa'
 import { FaChevronRight } from 'react-icons/fa6'
-import './SwiperGrid.scss'
 import 'swiper/css'
 import 'swiper/css/grid'
 import 'swiper/css/navigation'
+import './SwiperGrid.scss'
 const SwiperGrid = ({ children, data = [], title, rows = 1, numPerView, responsiveBreakpoints }) => {
     const refSwiperGrid = useRef()
     const handleSlide = () => {
@@ -33,8 +33,8 @@ const SwiperGrid = ({ children, data = [], title, rows = 1, numPerView, responsi
             <Swiper
                 slidesPerView={numPerView}
                 spaceBetween={10}
-                navigation={true}
                 grid={{ rows: rows, fill: 'row' }}
+                navigation={true}
                 breakpoints={responsiveBreakpoints}
                 modules={[Grid, Navigation]}
             >

@@ -1,7 +1,6 @@
 import "./Header.scss"
 import { BiCategory } from "react-icons/bi";
-import { FaChevronDown, FaChevronRight } from "react-icons/fa6";
-import { IoMdMenu } from "react-icons/io";
+import { FaChevronRight } from "react-icons/fa6";
 import myImg from "../../assaset/Mohamed_Elsayed.jpg"
 import { useState } from "react";
 import { NavLink } from "react-router-dom";

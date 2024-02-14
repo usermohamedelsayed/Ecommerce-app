@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { FaStar } from 'react-icons/fa6'
 import { IoIosHeart, IoIosHeartEmpty } from 'react-icons/io'
 import { useDispatch, useSelector } from "react-redux"
@@ -10,6 +10,7 @@ import productNotFound from "../../../assaset/no_product_found.jpg"
 import "./CardBolder.scss"
 const numRandom = (min, max) => Math.floor(Math.random() * (max - min) + min)
 const CardBolder = ({ product }) => {
+    const refImgBig = useRef()
     const { valueInput } = useParams()
     const [numProduct, setNumProduct] = useState(1)
     const { data } = useSelector(state => state.sliceFavourite)
@@ -53,6 +54,9 @@ const CardBolder = ({ product }) => {
     const handleErrorImg = (e) => {
         e.target.src = productNotFound
     }
+    const replceSrcToBigImg = (e) => {
+        refImgBig.current.src = e.target.src
+    }
     useEffect(() => {
         setNumProduct(numRandom(1, 1000))
     }, [])
@@ -62,23 +66,16 @@ const CardBolder = ({ product }) => {
                 <div className="head">
                     <span className="percen">-{Math.ceil(Math.random() * 100)}%</span>
                     <div className='heart' onClick={() => addProductFavourite(product)}>
-                        {
-                            (data.find(item => +item.id === +product.id)) ?
-                                <i>
-                                    <IoIosHeart style={{ color: "red" }} />
-                                </i>
-                                : (
-                                    <i>
-                                        <IoIosHeartEmpty />
-                                    </i>
-                                )
-                        }
+                        {(data.find(item => +item.id === +product.id)) ?
+                            <i><IoIosHeart style={{ color: "red" }} /></i>
+                            : (<i><IoIosHeartEmpty /></i>)}
                     </div>
                 </div>
 
                 <div className="imgs">
                     <Link to={`/product/${product.id}`}>
                         <img
+                            ref={refImgBig}
                             className='imgBig'
                             src={product.images[0]}
                             onError={handleErrorImg}
@@ -93,6 +90,7 @@ const CardBolder = ({ product }) => {
                                 src={img}
                                 alt={"img" + product.id}
                                 onError={handleErrorImg}
+                                onClick={replceSrcToBigImg}
                             />)}
                     </div>
                 </div>

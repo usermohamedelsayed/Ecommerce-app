@@ -7,17 +7,9 @@
     border-radius: 4px;
     height: 100%;
 
-    @media screen and (max-width: 815px) {
-        grid-template-columns: 1fr;
-
-        .left {
-            padding-right: 0 !important;
-        }
-    }
-
     .left {
         position: relative;
-        padding-right: 15px;
+        padding-right: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -73,17 +65,16 @@
         }
 
         .imgs {
-            max-width: 190px;
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 5px;
             flex: 1;
+            margin-bottom: 20px;
 
             .imgBig {
-                width: 100%;
+                width: 100px;
                 object-fit: contain;
                 transition: .3s ease;
                 cursor: pointer;
@@ -98,10 +89,14 @@
                 gap: 5px;
 
                 img {
-                    width: 50px;
+                    width: 40px;
                     cursor: pointer;
                     transition: .3s ease;
                     user-select: none;
+
+                    @media screen and (max-width: 340px) {
+                        width: 35px;
+                    }
 
                     &:hover {
                         scale: 1.1;
@@ -119,7 +114,7 @@
 
         .title {
             font-weight: 600;
-            font-size: 15px;
+            font-size: 13px;
             line-height: 1.5;
             margin-bottom: 10px;
         }
@@ -155,7 +150,7 @@
             display: flex;
             align-items: center;
             font-size: 13px;
-            gap: 4px;
+            gap: 2px;
 
             .days {
                 display: flex;

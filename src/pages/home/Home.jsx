@@ -12,7 +12,7 @@ let breakpointsCol6 = {
     0: {
         slidesPerView: 1,
     },
-    350: {
+    400: {
         slidesPerView: 2,
     },
     700: {
@@ -90,7 +90,7 @@ const Home = () => {
                                 0: {
                                     slidesPerView: 1,
                                 },
-                                550: {
+                                767: {
                                     slidesPerView: 2,
                                 },
                                 1200: {

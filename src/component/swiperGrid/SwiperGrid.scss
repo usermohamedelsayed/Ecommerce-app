@@ -1,6 +1,5 @@
 .SwiperGrid {
     width: 100%;
-    // max-height: 650px;
     height: 100%;
     overflow: hidden;
     display: inline;
@@ -10,7 +9,6 @@
 
     @media screen and (max-width: 815px) {
         max-height: 1150px;
-
     }
 
     .swiper {
@@ -20,7 +18,11 @@
 
         .swiper-slide {
             width: 100%;
-            height: calc((100% - 10px) / 2) !important;
+            height: calc((100% - 10px) / 2);
+
+            .CardBolder {
+                height: 100%;
+            }
         }
     }
 }
