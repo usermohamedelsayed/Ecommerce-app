@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c002f612.css",
+    "main.css": "/static/css/main.e1ce2d5d.css",
     "main.js": "/static/js/main.fa06aebc.js",
     "static/media/Mohamed_Elsayed.jpg": "/static/media/Mohamed_Elsayed.a9af27f613c6295b5a4b.jpg",
     "static/media/no_product_found.jpg": "/static/media/no_product_found.7480c7fbca0adaa14d1b.jpg",
@@ -20,11 +20,11 @@
     "static/media/brand-07.png": "/static/media/brand-07.3c1bbdb480d5d6e8d815.png",
     "static/media/catbanner-06.jpg": "/static/media/catbanner-06.0f874d6509da88fbc26b.jpg",
     "index.html": "/index.html",
-    "main.c002f612.css.map": "/static/css/main.c002f612.css.map",
+    "main.e1ce2d5d.css.map": "/static/css/main.e1ce2d5d.css.map",
     "main.fa06aebc.js.map": "/static/js/main.fa06aebc.js.map"
   },
   "entrypoints": [
-    "static/css/main.c002f612.css",
+    "static/css/main.e1ce2d5d.css",
     "static/js/main.fa06aebc.js"
   ]
 }
