@@ -61,7 +61,7 @@ const Home = () => {
 
                     {/* ----------- Products ------------ */}
                     <SwiperCarousl
-                        data={data}
+                        data={data.slice(0, 12)}
                         numPerView={6}
                         title={"featured collection"}
                         responsiveBreakpoints={breakpointsCol6}
@@ -70,7 +70,7 @@ const Home = () => {
                     </SwiperCarousl>
 
                     <SwiperCarousl
-                        data={data}
+                        data={data.slice(12, 24)}
                         numPerView={4}
                         responsiveBreakpoints={breakpointsCol4}
                         idSpecial={0}
@@ -81,7 +81,7 @@ const Home = () => {
                     </SwiperCarousl>
 
                     <SwiperGrid
-                        data={data}
+                        data={data.slice(0, 16)}
                         numPerView={3}
                         title={"special products"}
                         rows={2}
@@ -103,7 +103,7 @@ const Home = () => {
                     </SwiperGrid>
 
                     <SwiperCarousl
-                        data={data}
+                        data={data.slice(12, 20)}
                         numPerView={6}
                         title={"our popular products"}
                         responsiveBreakpoints={breakpointsCol6}
